@@ -177,5 +177,133 @@ int main(){
         return 0;
         }
     }}
-		
-		
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+//Crie um programa que leia 5 números inteiros e depois exiba todos os valores digitados//
+
+int main() {
+    const int tamanho = 5;
+    int numeros[tamanho];
+    std::cout << "Digite 5 números inteiros: " << std::endl;
+    for (int i = 0; i < tamanho; ++i) {
+        std::cout << "Número" << i + 1 << ":";
+        std::cin >> numeros[i];
+    }
+    std::cout << "\nVocê digitou os seguintes números:" << std::endl;
+    for (int i = 0; i < tamanho++i) {
+        std::cout << numeros[i] << " ";
+    }
+    std::cout << std::endl;
+    return 0;
+}
+
+//Leia 10 números inteiros e exiba apenas os números pares//
+
+int main() {
+    const int tamanho = 10;
+    int numeros[tamanho];
+    std::cout << "Digite 10 números inteiros:" << std::endl;
+       for (int i = 0; i < tamanho; ++i) {
+        std::cout << "Número " << i + 1 << ": ";
+        std::cin >> numeros[i];
+    }
+       std::cout << "\nNúmeros pares digitados:" << std::endl;
+    for (int i = 0; i < tamanho; ++i) {
+        if (numeros[i] % 2 == 0) {
+            std::cout << numeros[i] << " ";
+        }
+    }
+    std::cout << std::endl;
+    return 0;
+}
+//Leia 4 notas de um aluno, calcule a média e informe se ele está aprovado(média>=7)ou reprovado(média < 7)//
+
+int main() {
+    const int quantidade_notas = 4;
+    float notas[quantidade_notas];
+    float soma = 0;
+    std::cout << "Digite as 4 notas do aluno:" << std::endl;
+      for (int i = 0; i < QUANTIDADE_NOTAS; ++i) {
+        std::cout << "Nota " << i + 1 << ": ";
+        std::cin >> notas[i];
+        soma += notas[i];
+    }
+       float media = soma / quantidade_notas;
+        std::cout << "\nMédia: " << media << std::endl;
+    if (media >= 7.0) {
+        std::cout << "Aluno aprovado!" << std::endl;
+    } else {
+        std::cout << "Aluno reprovado." << std::endl;
+    }
+    return 0;
+}
+
+//Leia 6 números inteiros e mostre qual é o maior e qual é o menor número//
+
+int main() {
+    int quantidade= 6;
+    int numeros[quantidade];
+    cout << "Digite 6 números inteiros: " << endl;
+     for (int i = 0; i < quantidade; ++i) {
+        cout << "Número" << i + 1 << ":";
+        cin >> numeros[i];
+    }
+       int maior = numeros[0];
+    int menor = numeros[0];
+       for (int i = 1; i < quantidade; ++i) {
+        if (numeros[i] > maior) {
+            maior = numeros[i];
+        }
+        if (numeros[i] < menor) {
+            menor = numeros[i];
+        }
+    }
+      cout << "\nMaior número: " << maior << endl;
+    cout << "Menor número: " << menor << endl;
+    return 0;
+}
+//Leia 8 números e conte quantos são positivos e quantos são negativos//
+
+int main() {
+    int quantidade = 8;
+    int numeros[quantidade];
+    int positivos = 0;
+    int negativos = 0;
+    cout << "Digite 8 números inteiros (positivos ou negativos):" << endl;
+       for (int i = 0; i < quantidade; ++i) {
+        cout << "Número " << i + 1 << ": ";
+        cin >> numeros[i];
+        if (numeros[i] > 0) {
+            positivos++;
+        } else if (numeros[i] < 0) {
+            negativos++;
+        }
+           }
+       cout << "\nQuantidade de números positivos: " << positivos << endl;
+    cout << "Quantidade de números negativos: " << negativos << endl;
+    return 0;
+}
+
+
+#include <iostream>
+#include <string>
+class animal{
+	public:
+	std::string nome;
+	std::string especie;
+	float idade;
+
+};
+
+int main(){
+	
+	animal gato;
+	gato.nome = "Meleys";
+	gato.especie = "gato";
+	gato.idade = 1;
+	
+	std::cout<<"\nO nome do gato é: " << gato.nome;
