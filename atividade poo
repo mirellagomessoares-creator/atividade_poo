@@ -1,0 +1,9 @@
+1 - O que é um vetor em c + +? Explique com suas palavras
+É um tipo de arranjo que organiza e guarda múltiplos dados do mesmo tipo de forma contígua na memória. Cada elemento individual é identificado e recuperado através de um número de posição.
+
+2 - Qual a diferença entre declarar um vetor com um valor fixo e inicializá-lo com valores específicos
+A diferença está no momento da atribuição dos dados. Quando se declara um vetor com um tamanho fixo você está apenas reservando o espaço na memória para cinco inteiros, mas sem preencher esses espaços. A inicialização por outro lado, já preenche esses espaços com os valores indicados logo na criação da variável.
+
+3 - Explique o que significa índice e qual o intervalo valido para um vetor int notas[10];
+O índice é a chave numérica que aponta para um elemento específico dentro da sequência do vetor, funcionando como o endereço de cada item. Para um vetor chamado notas com capacidade total para 10 elementos o intervalo válido de índices vai do 0 (primeiro elemento) até o 9 (décimo e último elemento
+
